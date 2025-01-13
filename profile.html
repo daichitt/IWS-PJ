@@ -4,103 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
     <title>DAICHI ISHIKAWA Portfolio</title>
 </head>
 <body class="bg-gray-100">
+<script src="profile.js"></script> <!-- Include any JavaScript if needed -->
 
 
 <!-- Header -->
-
-<header class="bg-blue-600 text-white p-4">
-    <h1 class="text-3xl">DAICHI ISHKAWA</h1>
-    <nav class="mt-2">
-        <a href="#about" class="mr-4">About Me</a>
-        <a href="#experience" class="mr-4">Experience</a>
-        <a href="#projects" class="mr-4">Projects</a>
-        <a href="#contact">Contact</a>
+<header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 shadow-lg">
+    <h1 class="text-4xl font-bold">DAICHI ISHKAWA</h1>
+    <nav class="mt-3">
+        <a href="#about" class="mr-6 hover:text-blue-300">About Me</a>
+        <a href="#experience" class="mr-6 hover:text-blue-300">Experience</a>
+        <a href="#projects" class="mr-6 hover:text-blue-300">Projects</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
     </nav>
 </header>
 
-
 <!-- About Me Section -->
-<section id="about" class="p-8">
-    <h2 class="text-2xl font-bold">About Me</h2>
-    <img src="images/profile1.jpg" alt="Your Photo" class="rounded-full w-32 h-32 mt-4">
-    <p>Date of Birth: [25/09/2000]</p>
+<section id="about" class="p-10 bg-white shadow-md rounded-lg mt-6">
+    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <img src="images/profile1.jpg" alt="Your Photo" class="rounded-full w-32 h-32 mt-4 mb-4 border-4 border-blue-500">
+    <p>Date of Birth: 25/09/2000</p>
     <p>Email: 22lif04001@ms.hanu.edu.vn</p>
-    <p>Phone: [0317128903]</p>
+    <p>Phone: 0317128903</p>
     <p>Social Links: 
-        <a href="https://www.facebook.com/daichi.ishikawa.2024/" target="_blank" class="text-blue-500">Facebook</a>,
-        <a href="https://github.com/daichitt" target="_blank" class="text-blue-500">GitHub</a>
+        <a href="https://www.facebook.com/daichi.ishikawa.2024/" target="_blank" class="text-blue-500 hover:underline">Facebook</a>,
+        <a href="https://github.com/daichitt" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
     </p>
-    <h3 class="font-semibold">Hobbies:</h3>
-    <ul>
+    <h3 class="font-semibold mt-4">Hobbies:</h3>
+    <ul class="list-disc pl-5">
         <li>Gym</li>
         <li>Eat VN food</li>
-        <!-- Add more hobbies -->
     </ul>
-    <h3 class="font-semibold">Education:</h3>
-    <p>Hanoi university</p>
-    <h3 class="font-semibold">Skills:</h3>
+    <h3 class="font-semibold mt-4">Education:</h3>
+    <p>Hanoi University</p>
+    <h3 class="font-semibold mt-4">Skills:</h3>
     <ul class="list-disc pl-5">
         <li>Java</li>
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>React</li>
-        <!-- Add more skills -->
     </ul>
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="bg-gray-200 p-8">
-    <h2 class="text-2xl font-bold">Work Experience</h2>
+<section id="experience" class="bg-gray-200 p-10 mt-6 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
     <div class="mt-4">
-        <h3>[Position] at [Company]</h3>
-        <p>From [Start Date] to [End Date]</p>
+        <h3 class="text-xl font-semibold">[Position] at [Company]</h3>
+        <p>[Start Date] to [End Date]</p>
         <p>[Short Description of Work Done]</p>
     </div>
-    <!-- Repeat for additional experiences -->
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="p-8">
-    <h2 class="text-2xl font-bold">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+<section id="projects" class="p-10 mt-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-3xl font-bold mb-4">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
         <!-- Repeat for each project -->
-        <div class="border p-4 rounded-lg">
+        <div class="border p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
             <h3>[Project Title]</h3>
             <p>[Project Description]</p>
-            <a href="[Project Link]" class="text-blue-500">View Project</a>
+            <a href="[Project Link]" class="text-blue-500 hover:underline">View Project</a>
         </div>
-        <div class="border p-4 rounded-lg">
-            <h3>[Project Title]</h3>
-            <p>[Project Description]</p>
-            <a href="[Project Link]" class="text-blue-500">View Project</a>
-        </div>
-        <div class="border p-4 rounded-lg">
-            <h3>[Project Title]</h3>
-            <p>[Project Description]</p>
-            <a href="[Project Link]" class="text-blue-500">View Project</a>
-        </div>
+        <!-- Additional project cards -->
     </div>
 </section>
 
 <!-- Contact Form Section -->
-<section id="contact" class="bg-gray-200 p-8">
-    <h2 class="text-2xl font-bold">Contact Me</h2>
+<section id="contact" class="bg-gray-200 p-10 mt-6 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
     <form action="" method="POST" class="mt-4">
-        <input type="text" name="name" placeholder="Your Name" required class="border p-2 w-full mb-4"/>
-        <input type="email" name="email" placeholder="Your Email" required class="border p-2 w-full mb-4"/>
-        <textarea name="message" placeholder="Your Message" required class="border p-2 w-full mb-4"></textarea>
-        <button type="submit" class="bg-blue-600 text-white p-2 rounded">Send Message</button>
+        <input type="text" name="name" placeholder="Your Name" required class="border p-3 w-full mb-4 rounded"/>
+        <input type="email" name="email" placeholder="Your Email" required class="border p-3 w-full mb-4 rounded"/>
+        <textarea name="message" placeholder="Your Message" required class="border p-3 w-full mb-4 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition-colors duration-200">Send Message</button>
     </form>
 </section>
+    <!-- <h1>GitHub Profile Picture</h1>
+    <img id="github-avatar" src="" alt="GitHub Avatar" style="width: 100px; height: 100px; border-radius: 50%;"> -->
 
 <!-- Footer -->
-<footer class="bg-blue-600 text-white text-center p-4 mt-8">
+<footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center p-4 mt-auto">
     &copy; 2025 DAICHI ISHKAWA. All rights reserved.
 </footer>
 
-<script src="[Your JavaScript File]"></script> <!-- Include any JavaScript if needed -->
 </body>
 </html>
