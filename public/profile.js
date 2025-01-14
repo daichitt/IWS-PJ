@@ -27,18 +27,18 @@ const username = 'daichitt'; // Replace with the desired GitHub username
 getGitHubAvatar(username).then(userData => {
     console.log('Avatar URL:', userData.avatar_url);
     if (userData.avatar_url) {
-        // You can also set this URL to an image element in your HTML
+        // Check if the image element exists
+        const profilePhoto = document.getElementById('profilePhoto1');
+        console.log(profilePhoto);
+        if (!profilePhoto.src) {
+            // Set the src attribute to a default image path
+            profilePhoto.src = userData.avatar_url;
+        } else {
+            console.log('Image not found.');
+        }  // You can also set this URL to an image element in your HTML
         // document.getElementById('github-avatar').src = userData.avatar_url; // Assuming you have an <img> element with this ID
     }
 
-
-    // Check if the image element exists
-    const profilePhoto = document.getElementById('profilePhoto1');
-    if (!profilePhoto) {
-        // Set the src attribute to userData.avatar_url
-        profilePhoto.src = userData.avatar_url;
-    } else {
-        console.error('Element with ID "profilePhoto1" not found.');
-    }
+    
 });
 
