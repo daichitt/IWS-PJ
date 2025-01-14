@@ -8,97 +8,130 @@
     <title>DAICHI ISHIKAWA Portfolio</title>
 </head>
 <body class="bg-gray-100">
-<script src="profile.js"></script> <!-- Include any JavaScript if needed -->
-
+<script src="profile.js"></script>
 
 <!-- Header -->
-<header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 shadow-lg">
-    <h1 class="text-4xl font-bold">DAICHI ISHKAWA</h1>
-    <nav class="mt-3">
-        <a href="#about" class="mr-6 hover:text-blue-300">About Me</a>
-        <a href="#experience" class="mr-6 hover:text-blue-300">Experience</a>
-        <a href="#projects" class="mr-6 hover:text-blue-300">Projects</a>
-        <a href="#contact" class="hover:text-blue-300">Contact</a>
-    </nav>
+<header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-bold">DAICHI ISHIKAWA</h1>
+        <nav class="space-x-8">
+            <a href="#about" class="hover:text-blue-200">About Me</a>
+            <a href="#experience" class="hover:text-blue-200">Experience</a>
+            <a href="#projects" class="hover:text-blue-200">Projects</a>
+            <a href="#contact" class="hover:text-blue-200">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<!-- About Me Section -->
-<section id="about" class="p-10 bg-white shadow-md rounded-lg mt-6">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <img src="images/profile1.jpg" alt="Your Photo" class="rounded-full w-32 h-32 mt-4 mb-4 border-4 border-blue-500">
-    <p>Date of Birth: 25/09/2000</p>
-    <p>Email: 22lif04001@ms.hanu.edu.vn</p>
-    <p>Phone: 0317128903</p>
-    <p>Social Links: 
-        <a href="https://www.facebook.com/daichi.ishikawa.2024/" target="_blank" class="text-blue-500 hover:underline">Facebook</a>,
-        <a href="https://github.com/daichitt" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
-    </p>
-    <h3 class="font-semibold mt-4">Hobbies:</h3>
-    <ul class="list-disc pl-5">
-        <li>Gym</li>
-        <li>Eat VN food</li>
-    </ul>
-    <h3 class="font-semibold mt-4">Education:</h3>
-    <p>Hanoi University</p>
-    <h3 class="font-semibold mt-4">Skills:</h3>
-    <ul class="list-disc pl-5">
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-    </ul>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="bg-gray-200 p-10 mt-6 rounded-lg shadow-md">
-    <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
-    <div class="mt-4">
-        <h3 class="text-xl font-semibold">Software Enginner at CS Inc</h3>
-        <p>1/1/2023 to 31/8/2023</p>
-        <p>Develop UI wirh React</p>
-    </div>
-    <div class="mt-4">
-        <h3 class="text-xl font-semibold">Software Enginner at MS Inc</h3>
-        <p>1/7/2020 to 31/4/2022</p>
-        <p>Develop CRM Backend and Frontend</p>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="p-10 mt-6 bg-white shadow-md rounded-lg">
-    <h2 class="text-3xl font-bold mb-4">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-        <div class="border p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3>CRM system</h3>
-            <br>
-            <p>Custom CRM for client, improving data management, sales, and customer satisfaction</p>
-            <br>
-            <p>Tech Stack : PHP/Laravel/MySQL/JavaScript</p>
+<!-- Main Content -->
+<main class="pt-24 px-4">
+    <!-- About Me Section -->
+    <section id="about" class="p-10 bg-white shadow-md rounded-lg hover-scale">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="profile-image">
+                    <img src="images/profile1.jpg" alt="Your Photo" class="rounded-full w-40 h-40 object-cover border-4 border-blue-500">
+                </div>
+                <div class="flex-1">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="mb-2"><span class="font-semibold">Date of Birth:</span> 25/09/2000</p>
+                            <p class="mb-2"><span class="font-semibold">Email:</span> 22lif04001@ms.hanu.edu.vn</p>
+                            <p class="mb-2"><span class="font-semibold">Phone:</span> 0317128903</p>
+                        </div>
+                        <div>
+                            <p class="mb-4"><span class="font-semibold">Social Links:</span></p>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/daichi.ishikawa.2024/" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                    <i class="fab fa-facebook text-2xl"></i> Facebook
+                                </a>
+                                <a href="https://github.com/daichitt" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                    <i class="fab fa-github text-2xl"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-xl mb-3">Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="border p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3>E-commerce Website</h3>
-            <br>
-            <p>A fully functional e-commerce platform with product catalog, shopping cart, and secure payment gateway.</p>
-            <br>
-            <p>Tech Stack : React/Node.js/Express/MongoDB</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Form Section -->
-<section id="contact" class="bg-gray-200 p-10 mt-6 rounded-lg shadow-md">
-    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-    <form action="" method="POST" class="mt-4">
-        <input type="text" name="name" placeholder="Your Name" required class="border p-3 w-full mb-4 rounded"/>
-        <input type="email" name="email" placeholder="Your Email" required class="border p-3 w-full mb-4 rounded"/>
-        <textarea name="message" placeholder="Your Message" required class="border p-3 w-full mb-4 rounded"></textarea>
-        <button type="submit" class="bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition-colors duration-200">Send Message</button>
-    </form>
-</section>
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-50 p-10 rounded-lg shadow-md hover-scale">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Work Experience</h2>
+            <div class="space-y-8">
+                <div class="project-card">
+                    <h3 class="text-xl font-semibold text-blue-700">Software Engineer at CS Inc</h3>
+                    <p class="text-gray-600 mb-2">1/1/2023 to 31/8/2023</p>
+                    <p class="text-gray-700">Develop UI with React</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="text-xl font-semibold text-blue-700">Software Engineer at MS Inc</h3>
+                    <p class="text-gray-600 mb-2">1/7/2020 to 31/4/2022</p>
+                    <p class="text-gray-700">Develop CRM Backend and Frontend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-10 bg-white shadow-md rounded-lg hover-scale">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">CRM System</h3>
+                    <p class="text-gray-700 mb-4">Custom CRM for client, improving data management, sales, and customer satisfaction</p>
+                    <p class="text-gray-600">Tech Stack: PHP/Laravel/MySQL/JavaScript</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">E-commerce Website</h3>
+                    <p class="text-gray-700 mb-4">A fully functional e-commerce platform with product catalog, shopping cart, and secure payment gateway.</p>
+                    <p class="text-gray-600">Tech Stack: React/Node.js/Express/MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="bg-gray-50 p-10 rounded-lg shadow-md hover-scale">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Contact Me</h2>
+            <form action="" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" name="name" placeholder="Your Name" required class="contact-input"/>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your Email" required class="contact-input"/>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Your Message" required class="contact-input h-32"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
 
 <!-- Footer -->
-<footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center p-4 mt-auto">
-    &copy; 2025 DAICHI ISHKAWA. All rights reserved.
+<footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white text-center p-6 mt-12">
+    <div class="max-w-6xl mx-auto">
+        <p>&copy; 2025 DAICHI ISHIKAWA. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
